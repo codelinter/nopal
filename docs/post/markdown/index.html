@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+ 
+
+<meta name="description" content="Markdown Plus Markdown Plus (&ldquo;M&#43;&rdquo; or &ldquo;mdp&rdquo; for short) is a markdown editor with extra features.
+Apps We currently don&rsquo;t accept donations. The best way to support our development is to buy our apps.
+Markdown Mate  Markdown Mate is a markdown previewer, it&rsquo;s not going to replace your favorite editor but handles everything about markdown.
+Table of Contents [toc]
+Note: Only h2 and h3 are shown in toc.">
+<meta property="og:description" content="Markdown Plus Markdown Plus (&ldquo;M&#43;&rdquo; or &ldquo;mdp&rdquo; for short) is a markdown editor with extra features.
+Apps We currently don&rsquo;t accept donations. The best way to support our development is to buy our apps.
+Markdown Mate  Markdown Mate is a markdown previewer, it&rsquo;s not going to replace your favorite editor but handles everything about markdown.
+Table of Contents [toc]
+Note: Only h2 and h3 are shown in toc.">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Markdown Test">
+<meta property="og:url" content="/post/markdown/">
+<meta property="og:site_name" content="Nopal Site Title">   
+          
+<link rel="shortcut icon" href="/images/favicon.png">
+
+    
+<title>Nopal Site Title:
+         
+Markdown Test  
+
+    
+</title>
+    
+
+
+   <link rel="stylesheet" href="/css/classic.css">
+
+    
+    <link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+</head>
+<body class="max-width mx-auto px3">
+<div id="header-post">
+        <a id="menu-icon" href=""><i class="fas fa-bars fa-lg"></i></a>
+        <a id="menu-icon-tablet" href=""><i class="fas fa-bars fa-lg"></i></a>
+        <a id="top-icon-tablet" href="" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>    
+        <span id="menu">
+            <span id="nav">                    
+                            <ul>                         
+                                    
+<li><a href="/">Home </a></li> 
+
+<li><a href="/about">About </a></li> 
+
+<li><a href="/posts">Posts </a></li> 
+
+<li><a href="/tags">Surf via tags </a></li> 
+
+                            </ul>
+            </span>
+            <br>
+            <span id="actions">
+                <ul>
+                    
+        
+        <li><a class="icon" href="/post/post4/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/post/helloworld/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+         
+                  <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+                  <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+                </ul>
+                <span id="i-prev" class="info" style="display:none;">some random Post4 (older)</span> 
+                <span id="i-next" class="info" style="display:none;">Hello World (newer)</span> 
+                <span id="i-top" class="info" style="display:none;">Back to top</span>
+                <span id="i-share" class="info" style="display:none;">Share post</span>
+            </span>
+            <br>
+          <div id="share" style="display: none">
+            <ul>                
+            
+            
+            <li><a class="icon" href=https://twitter.com/share?url&#61;/post/markdown/&amp;text&#61;Markdown%20Test><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=http://www.linkedin.com/shareArticle?url&#61;/post/markdown/&amp;title&#61;Markdown%20Test><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=https://pinterest.com/pin/create/bookmarklet/?url&#61;/post/markdown/&amp;description&#61;Markdown%20Test><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=mailto:?subject&#61;/post/markdown/&amp;body&#61;New%20article%20at:%20Markdown%20Test><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=https://getpocket.com/save?url&#61;/post/markdown/&amp;title&#61;Markdown%20Test><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=http://reddit.com/submit?url&#61;/post/markdown/&amp;title&#61;Markdown%20Test><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=http://www.stumbleupon.com/submit?url&#61;/post/markdown/&amp;title&#61;Markdown%20Test><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=http://digg.com/submit?url&#61;/post/markdown/&amp;title&#61;Markdown%20Test><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+            
+            
+            <li><a class="icon" href=http://www.tumblr.com/share/link?url&#61;/post/markdown/&amp;name&#61;Markdown%20Test&amp;description&#61;><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+            
+            </ul>          
+          </div>
+          <div id="toc">
+                  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#markdown-plus">Markdown Plus</a></li>
+<li><a href="#apps">Apps</a>
+<ul>
+<li><a href="#markdown-mate">Markdown Mate</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#table-of-contents">Table of Contents</a>
+<ul>
+<li><a href="#mastering-markdown">Mastering Markdown</a></li>
+<li><a href="#strikethrough"><del>strikethrough</del></a></li>
+<li><a href="#insert">++insert++</a></li>
+<li><a href="#mark">==mark==</a></li>
+<li><a href="#subscript-h-2-o">Subscript: H~2~O</a></li>
+<li><a href="#superscript-29-th">Superscript: 29^th^</a></li>
+<li><a href="#emoji-panda-face-sparkles-camel-boom-pig">Emoji: :panda_face: :sparkles: :camel: :boom: :pig:</a></li>
+<li><a href="#fontawesome-fa-cab-fa-flag-fa-bicycle-fa-leaf-fa-heart">Fontawesome: :fa-cab: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:</a></li>
+<li><a href="#print-hello-code"><code>print 'hello code'</code></a></li>
+<li><a href="#tables-and-alignment">Tables and alignment</a></li>
+<li><a href="#task-list">Task list</a></li>
+<li><a href="#abbreviation">Abbreviation</a></li>
+<li><a href="#footnote">Footnote</a></li>
+<li><a href="#mathematical-formula-y-x-2">Mathematical formula <code>$y = x^2$</code></a></li>
+<li><a href="#asciimath">AsciiMath</a></li>
+<li><a href="#mermaid-charts">mermaid charts</a>
+<ul>
+<li><a href="#flowchart">Flowchart</a></li>
+<li><a href="#sequence-diagram">Sequence diagram</a></li>
+<li><a href="#gantt-diagram">Gantt diagram</a></li>
+<li><a href="#class-diagram">Class diagram</a></li>
+</ul></li>
+<li><a href="#custom-container">Custom Container</a></li>
+<li><a href="#definition-list">Definition list</a></li>
+</ul></li>
+</ul>
+</nav>            
+          </div>
+        </span>
+    </div>
+<div class="content index my4">
+  <article class="post"  itemscope itemtype="http://schema.org/BlogPosting">
+        <header> 
+        <h1 class="posttitle" itemprop="name headline">
+            Markdown Test
+        </h1>
+        <div class="meta">              
+              <div class="postdate">
+                  <time datetime=2018-03-21T13:33:09.000Z itemprop="datePublished">21 Mar,2018</time>
+              </div>
+              <div class="article-tag">
+                  <i class="fas fa-tag"></i>                  
+                  
+                  <a class="tag-link" href="/tags/golang">golang</a>
+                  
+                  <a class="tag-link" href="/tags/markdown">markdown</a>
+                  
+                  <a class="tag-link" href="/tags/test2">test2</a>
+                  
+              </div>
+        </div>
+        </header>
+        <div class="content">
+            
+
+<h2 id="markdown-plus">Markdown Plus</h2>
+
+<p>Markdown Plus (&ldquo;M+&rdquo; or &ldquo;mdp&rdquo; for short) is a markdown editor with extra features.</p>
+
+<h2 id="apps">Apps</h2>
+
+<p>We currently <strong><em>don&rsquo;t</em></strong> accept donations.
+The best way to support our development is to buy our apps.</p>
+
+<h3 id="markdown-mate">Markdown Mate</h3>
+
+<p><a href="/"><img src="/images/logo.png" width="100px"/></a>
+<a href="/images/logo.png">Markdown Mate</a> is a markdown previewer, it&rsquo;s not going to replace your favorite editor but handles everything about markdown.</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+
+<p>[toc]</p>
+
+<p>Note: Only <code>h2</code> and <code>h3</code> are shown in toc.</p>
+
+<h2 id="mastering-markdown">Mastering Markdown</h2>
+
+<p>Markdown allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing.</p>
+
+<p><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown Guide</a>.</p>
+
+<h2 id="strikethrough"><del>strikethrough</del></h2>
+
+<h2 id="insert">++insert++</h2>
+
+<h2 id="mark">==mark==</h2>
+
+<h2 id="subscript-h-2-o">Subscript: H~2~O</h2>
+
+<p>You can also use inline math: <code>$H_2O$</code></p>
+
+<h2 id="superscript-29-th">Superscript: 29^th^</h2>
+
+<p>You can also use inline math: <code>$29^{th}$</code></p>
+
+<h2 id="emoji-panda-face-sparkles-camel-boom-pig">Emoji: :panda_face: :sparkles: :camel: :boom: :pig:</h2>
+
+<p><a href="http://www.emoji-cheat-sheet.com/">Emoji Cheat Sheet</a></p>
+
+<h2 id="fontawesome-fa-cab-fa-flag-fa-bicycle-fa-leaf-fa-heart">Fontawesome: :fa-cab: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:</h2>
+
+<p><a href="http://fontawesome.io/icons/">All the Font Awesome icons</a></p>
+
+<h2 id="print-hello-code"><code>print 'hello code'</code></h2>
+
+<pre><code>evens = [1, 2, 3, 4, 5].collect do |item|
+  item * 2
+end
+</code></pre>
+
+<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#939390">1</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#939390">2</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#939390">3</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#939390">4</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#939390">5</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#939390">6</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75af00">$</span><span style="color:#111">(</span><span style="color:#111">document</span><span style="color:#111">).</span><span style="color:#75af00">ready</span><span style="color:#111">(()</span> <span style="color:#111">=&gt;</span> <span style="color:#111">{</span>
+  <span style="color:#75af00">$</span><span style="color:#111">(</span><span style="color:#d88200">&#39;pre code&#39;</span><span style="color:#111">).</span><span style="color:#75af00">each</span><span style="color:#111">((</span><span style="color:#75af00">i</span><span style="color:#111">,</span> <span style="color:#75af00">block</span><span style="color:#111">)</span> <span style="color:#111">=&gt;</span> <span style="color:#111">{</span>
+    <span style="color:#75af00">hljs</span><span style="color:#111">.</span><span style="color:#75af00">highlightBlock</span><span style="color:#111">(</span><span style="color:#75af00">block</span><span style="color:#111">);</span>
+  <span style="color:#111">});</span>
+<span style="color:#111">});</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p><a href="https://help.github.com/articles/markdown-basics/#code-formatting">Code Formatting</a></p>
+
+<h2 id="tables-and-alignment">Tables and alignment</h2>
+
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Content from cell 1</td>
+<td>Content from cell 2</td>
+</tr>
+
+<tr>
+<td>Content in the first column</td>
+<td>Content in the second column</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="right">Right Aligned</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="right">$1600</td>
+</tr>
+
+<tr>
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="https://help.github.com/articles/github-flavored-markdown/#tables">Table Syntax</a></p>
+
+<h2 id="task-list">Task list</h2>
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> a bigger project
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> first subtask</label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> follow up subtask</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> final subtask</label></li>
+</ul></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> a separate task</label></li>
+</ul>
+
+<p><a href="https://help.github.com/articles/writing-on-github/#task-lists">Task List Syntax</a></p>
+
+<h2 id="abbreviation">Abbreviation</h2>
+
+<p>Markup is based on <a href="https://michelf.ca/projects/php-markdown/extra/#abbr">php markdown extra</a> definition, but without multiline support:</p>
+
+<p>*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+The HTML specification
+is maintained by the W3C.</p>
+
+<h2 id="footnote">Footnote</h2>
+
+<p>Here is a footnote reference,<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> and another.<sup class="footnote-ref" id="fnref:longnote"><a href="#fn:longnote">2</a></sup></p>
+
+<p>belong to the previous footnote.</p>
+
+<p>Here is an inline note.<sup class="footnote-ref" id="fnref:Inlines-notes-ar"><a href="#fn:Inlines-notes-ar">3</a></sup></p>
+
+<p><a href="http://pandoc.org/README.html#footnotes">Footnote Syntax</a></p>
+
+<h2 id="mathematical-formula-y-x-2">Mathematical formula <code>$y = x^2$</code></h2>
+
+<p>Inline math: <code>$\dfrac{ \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }{ 1-\tfrac{1}{2} } = s_n$</code>.</p>
+
+<p>Math block:</p>
+
+<pre><code class="language-katex">\oint_C x^3\, dx + 4y^2\, dy
+
+2 = \left(
+ \frac{\left(3-x\right) \times 2}{3-x}
+ \right)
+
+\sum_{m=1}^\infty\sum_{n=1}^\infty\frac{m^2\,n}
+ {3^m\left(m\,3^n+n\,3^m\right)}
+
+\phi_n(\kappa) =
+ \frac{1}{4\pi^2\kappa^2} \int_0^\infty
+ \frac{\sin(\kappa R)}{\kappa R}
+ \frac{\partial}{\partial R}
+ \left[R^2\frac{\partial D_n(R)}{\partial R}\right]\,dR
+</code></pre>
+
+<p><a href="http://meta.wikimedia.org/wiki/Help:Displaying_a_formula">Mathematical Formula Syntax</a></p>
+
+<h2 id="asciimath">AsciiMath</h2>
+
+<p>Inline AsciiMath: <code>@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@</code></p>
+
+<pre><code class="language-AsciiMath">oint_Cx^3 dx+4y^2 dy
+
+2=(((3-x)xx2)/(3-x))
+
+sum_(m=1)^oosum_(n=1)^oo(m^2 n)/(3^m(m3^n+n3^m)
+</code></pre>
+
+<pre><code class="language-ASCIIMath">phi_n(kappa) = 1/(4pi^2 kappa^2)
+ int_0^oo (sin(kappa R))/(kappa R)
+ del/(del R)
+[R^2 (del D_n (R))/(del R)] del R
+</code></pre>
+
+<p><a href="http://asciimath.org/">AsciiMath Documentation</a></p>
+
+<h2 id="mermaid-charts">mermaid charts</h2>
+
+<h3 id="flowchart">Flowchart</h3>
+
+<pre><code class="language-mermaid">graph TD
+A[Christmas] --&gt;|Get money| B(Go shopping)
+B --&gt; C{Let me think}
+C --&gt;|One| D[Laptop]
+C --&gt;|Two| E[iPhone]
+C --&gt;|Three| F[Car]
+</code></pre>
+
+<dl>
+<dt><a href="http://knsv.github.io/mermaid/#flowcharts-basic-syntax">Flowchart Syntax</a></dt>
+<dt>::: warning
+Adding many flowcharts will slow down the editor.
+:::</dt>
+</dl>
+
+<h3 id="sequence-diagram">Sequence diagram</h3>
+
+<pre><code class="language-mermaid">sequenceDiagram
+loop every day
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
+end
+</code></pre>
+
+<dl>
+<dt><a href="http://knsv.github.io/mermaid/#sequence-diagrams">Sequence Diagram Syntax</a></dt>
+<dt>::: warning
+Adding many sequence diagrams will slow down the editor.
+:::</dt>
+</dl>
+
+<h3 id="gantt-diagram">Gantt diagram</h3>
+
+<pre><code class="language-mermaid">gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+
+section Critical tasks
+Completed task in the critical line :crit, done, 2014-01-06,24h
+Implement parser and jison          :crit, done, after des1, 2d
+Create tests for parser             :crit, active, 3d
+Future task in critical line        :crit, 5d
+Create tests for renderer           :2d
+Add to mermaid                      :1d
+
+section Documentation
+Describe gantt syntax               :active, a1, after des1, 3d
+Add gantt diagram to demo page      :after a1  , 20h
+Add another diagram to demo page    :doc1, after a1  , 48h
+
+section Last section
+Describe gantt syntax               :after doc1, 3d
+Add gantt diagram to demo page      : 20h
+Add another diagram to demo page    : 48h
+</code></pre>
+
+<dl>
+<dt><a href="http://knsv.github.io/mermaid/#gant-diagrams">Gantt Diagram Syntax</a></dt>
+<dt>::: warning
+Adding many gantt diagrams will slow down the editor.
+:::</dt>
+</dl>
+
+<h3 id="class-diagram">Class diagram</h3>
+
+<pre><code class="language-mermaid">classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --&gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 &lt;--&gt; C2: Cool label
+</code></pre>
+
+<dl>
+<dt>Class diagram is powered by <a href="https://github.com/knsv/mermaid">mermaid</a>.</dt>
+<dt>::: warning
+Adding many class diagrams will slow down the editor.
+:::</dt>
+</dl>
+
+<h2 id="custom-container">Custom Container</h2>
+
+<dl>
+<dt>Markup is similar to fenced code blocks. Valid container types are <code>success</code>, <code>info</code>, <code>warning</code> and <code>danger</code>.</dt>
+<dt>::: info
+You have new mail.
+:::</dt>
+<dt>::: danger
+Staying up all night is bad for health.
+:::</dt>
+</dl>
+
+<h2 id="definition-list">Definition list</h2>
+
+<p>Term 1
+  ~ Definition 1</p>
+
+<p>Term 2
+  ~ Definition 2a
+  ~ Definition 2b</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Here is the footnote.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+
+<li id="fn:longnote"><p>Here&rsquo;s one with multiple blocks.</p>
+
+<p>Subsequent paragraphs are indented to show that they</p>
+ <a class="footnote-return" href="#fnref:longnote"><sup>[return]</sup></a></li>
+<li id="fn:Inlines-notes-ar">Inlines notes are easier to write, since you don&rsquo;t have to pick an identifier and move down to type the note. <a class="footnote-return" href="#fnref:Inlines-notes-ar"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+        </div>
+</div>
+</article>
+<div id="footer-post-container"> 
+  <div id="footer-post">
+   <div id="nav-footer" style="display: none;">
+      <ul>
+          
+<li><a href="/">Home </a></li> 
+
+<li><a href="/about">About </a></li> 
+
+<li><a href="/posts">Posts </a></li> 
+
+<li><a href="/tags">Surf via tags </a></li> 
+
+          
+        
+        <li><a class="icon" href="/post/post4/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/post/helloworld/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+                       
+      </ul>
+   </div>
+   <div id="toc-footer" style="display: none;">
+      <ol class="toc"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#markdown-plus">Markdown Plus</a></li>
+<li><a href="#apps">Apps</a>
+<ul>
+<li><a href="#markdown-mate">Markdown Mate</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#table-of-contents">Table of Contents</a>
+<ul>
+<li><a href="#mastering-markdown">Mastering Markdown</a></li>
+<li><a href="#strikethrough"><del>strikethrough</del></a></li>
+<li><a href="#insert">++insert++</a></li>
+<li><a href="#mark">==mark==</a></li>
+<li><a href="#subscript-h-2-o">Subscript: H~2~O</a></li>
+<li><a href="#superscript-29-th">Superscript: 29^th^</a></li>
+<li><a href="#emoji-panda-face-sparkles-camel-boom-pig">Emoji: :panda_face: :sparkles: :camel: :boom: :pig:</a></li>
+<li><a href="#fontawesome-fa-cab-fa-flag-fa-bicycle-fa-leaf-fa-heart">Fontawesome: :fa-cab: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:</a></li>
+<li><a href="#print-hello-code"><code>print 'hello code'</code></a></li>
+<li><a href="#tables-and-alignment">Tables and alignment</a></li>
+<li><a href="#task-list">Task list</a></li>
+<li><a href="#abbreviation">Abbreviation</a></li>
+<li><a href="#footnote">Footnote</a></li>
+<li><a href="#mathematical-formula-y-x-2">Mathematical formula <code>$y = x^2$</code></a></li>
+<li><a href="#asciimath">AsciiMath</a></li>
+<li><a href="#mermaid-charts">mermaid charts</a>
+<ul>
+<li><a href="#flowchart">Flowchart</a></li>
+<li><a href="#sequence-diagram">Sequence diagram</a></li>
+<li><a href="#gantt-diagram">Gantt diagram</a></li>
+<li><a href="#class-diagram">Class diagram</a></li>
+</ul></li>
+<li><a href="#custom-container">Custom Container</a></li>
+<li><a href="#definition-list">Definition list</a></li>
+</ul></li>
+</ul>
+</nav></ol>
+   </div>
+   <div id="share-footer" style="display: none">
+       <ul>
+          <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://probberechts.github.io/2016/11/01/An-overview-of-all-Markdown-elements/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+      </ul>
+   </div>
+   <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display: none;" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+   </div>
+  </div>
+</div>
+
+<footer id="footer">
+        <div class="footer-left">
+          Copyright © 2018 mintyowl
+        </div>
+        <div class="footer-right">
+          <nav>
+            <ul>
+                
+<li><a href="/">Home </a></li> 
+
+<li><a href="/about">About </a></li> 
+
+<li><a href="/posts">Posts </a></li> 
+
+<li><a href="/tags">Surf via tags </a></li> 
+
+            </ul>
+          </nav>
+        </div>
+      </footer>
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/cookie.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

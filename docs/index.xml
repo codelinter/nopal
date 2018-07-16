@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nopal Site Title</title>
+    <link>/</link>
+    <description>Recent content on Nopal Site Title</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Mar 2018 14:14:47 +0530</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Fri, 23 Mar 2018 14:14:47 +0530</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About Hi, I’m a Napol theme, derviced from hexo-cactus theme, for the Hugo blogging framework. It&amp;rsquo;s clean and minimalistic for blogging and with the help of hugo you can build me fast.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/post/helloworld/</link>
+      <pubDate>Thu, 22 Mar 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/helloworld/</guid>
+      <description>Markdown Page
+   First Header Second Header     Content cell 1 Content cell 2   Content column 1 Content column 2    *literal asterisks*
+Some Highlighting
+Sed at risus cursus, feugiat lacus sit amet, rutrum sem. Vestibulum accumsan dui urna, vel feugiat lectus malesuada id.
+function test() { console.log(&amp;quot;look ma’, no spaces&amp;quot;); }   Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Test</title>
+      <link>/post/markdown/</link>
+      <pubDate>Wed, 21 Mar 2018 19:03:09 +0530</pubDate>
+      
+      <guid>/post/markdown/</guid>
+      <description>Markdown Plus Markdown Plus (&amp;ldquo;M+&amp;rdquo; or &amp;ldquo;mdp&amp;rdquo; for short) is a markdown editor with extra features.
+Apps We currently don&amp;rsquo;t accept donations. The best way to support our development is to buy our apps.
+Markdown Mate  Markdown Mate is a markdown previewer, it&amp;rsquo;s not going to replace your favorite editor but handles everything about markdown.
+Table of Contents [toc]
+Note: Only h2 and h3 are shown in toc.</description>
+    </item>
+    
+    <item>
+      <title>some random Post4</title>
+      <link>/post/post4/</link>
+      <pubDate>Tue, 27 Feb 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post4/</guid>
+      <description>Post4</description>
+    </item>
+    
+    <item>
+      <title>Post5</title>
+      <link>/post/post5/</link>
+      <pubDate>Mon, 26 Feb 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post5/</guid>
+      <description>Post5</description>
+    </item>
+    
+    <item>
+      <title>Post6</title>
+      <link>/post/post6/</link>
+      <pubDate>Sat, 24 Feb 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post6/</guid>
+      <description>Post6</description>
+    </item>
+    
+    <item>
+      <title>Post7</title>
+      <link>/post/post7/</link>
+      <pubDate>Wed, 24 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post7/</guid>
+      <description>Post7</description>
+    </item>
+    
+    <item>
+      <title>Post8</title>
+      <link>/post/post8/</link>
+      <pubDate>Sun, 21 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post8/</guid>
+      <description>Post8</description>
+    </item>
+    
+    <item>
+      <title>Post9</title>
+      <link>/post/post9/</link>
+      <pubDate>Fri, 19 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post9/</guid>
+      <description>Post9</description>
+    </item>
+    
+    <item>
+      <title>Post10</title>
+      <link>/post/post10/</link>
+      <pubDate>Thu, 18 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post10/</guid>
+      <description>Post10</description>
+    </item>
+    
+    <item>
+      <title>Post11</title>
+      <link>/post/post11/</link>
+      <pubDate>Wed, 17 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post11/</guid>
+      <description>Post11</description>
+    </item>
+    
+    <item>
+      <title>Post12</title>
+      <link>/post/post12/</link>
+      <pubDate>Tue, 16 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post12/</guid>
+      <description>Post12</description>
+    </item>
+    
+    <item>
+      <title>Post13</title>
+      <link>/post/post13/</link>
+      <pubDate>Thu, 11 Jan 2018 18:39:14 +0530</pubDate>
+      
+      <guid>/post/post13/</guid>
+      <description>Post13</description>
+    </item>
+    
+  </channel>
+</rss>
