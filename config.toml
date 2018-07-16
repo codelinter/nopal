@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "/nopal"
 languageCode = "en-us"
 title = "Nopal Site Title"
 theme = "nopal"

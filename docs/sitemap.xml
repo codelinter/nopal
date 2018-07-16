@@ -3,135 +3,135 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
+    <loc>/nopal/about/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/helloworld/</loc>
+    <loc>/nopal/post/helloworld/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/markdown/</loc>
+    <loc>/nopal/post/markdown/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post4/</loc>
+    <loc>/nopal/post/post4/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post5/</loc>
+    <loc>/nopal/post/post5/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post6/</loc>
+    <loc>/nopal/post/post6/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post7/</loc>
+    <loc>/nopal/post/post7/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post8/</loc>
+    <loc>/nopal/post/post8/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post9/</loc>
+    <loc>/nopal/post/post9/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post10/</loc>
+    <loc>/nopal/post/post10/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post11/</loc>
+    <loc>/nopal/post/post11/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post12/</loc>
+    <loc>/nopal/post/post12/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/post/post13/</loc>
+    <loc>/nopal/post/post13/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/nopal/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/nopal/post/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>/nopal/posts/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/tags/devops/</loc>
-    <lastmod>2018-07-16T19:09:36+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/golang/</loc>
+    <loc>/nopal/tags/devops/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
+    <loc>/nopal/tags/golang/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/nopal/tags/markdown/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/php/</loc>
+    <loc>/nopal/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/server/</loc>
+    <loc>/nopal/tags/php/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/nopal/tags/server/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/test/</loc>
+    <loc>/nopal/tags/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/test2/</loc>
+    <loc>/nopal/tags/test/</loc>
+    <lastmod>2018-07-16T19:09:36+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/nopal/tags/test2/</loc>
     <lastmod>2018-07-16T19:09:36+05:30</lastmod>
     <priority>0</priority>
   </url>
