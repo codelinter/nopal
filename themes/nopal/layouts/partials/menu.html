@@ -1,0 +1,20 @@
+<header id="header">
+        <a href="index.html">    
+            <div id="logo" style="background-image: url(/images/logo.png);"></div>
+          <div id="title">       
+            <h1> {{ partial "title.html" . }} </h1>
+          </div>
+        </a>
+        <div id="nav">
+          <ul>
+            <li class="icon">
+              <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+            </li>
+              {{$mainURL := .RelPermalink}}
+              {{ $cP := .}}
+              {{ range .Site.Menus.main}}              
+               <li><a href="{{ .URL }}" class="{{ if (or (and (hasPrefix  $mainURL (.URL | relURL)) (gt ( len .URL ) 1)) ($cP.IsMenuCurrent "main" .) ) }}active{{end}}"> {{.Name}} </a></li> 
+              {{end}}
+          </ul>
+        </div>
+</header>

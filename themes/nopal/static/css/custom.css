@@ -1,0 +1,111 @@
+body {
+    overflow-y: scroll;
+}
+
+
+pre {
+    padding: 2px 0px 0px 5px;
+}
+
+.highlight tbody {
+    display: table;
+    width: 100%;
+}
+
+.highlight {
+    background-color: #fafafa;
+    padding: 0px 5px;
+    border: 1px grey solid;
+}
+
+figure figcaption {
+    text-align: center;
+}
+article .content img, article .content video {
+    border: 1px dashed lightgray;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#TableOfContents ul li ul li {
+    display: block !important;
+    font-size: 0.7rem;
+    
+}
+
+#TableOfContents > ul > li > ul > li {
+    color: red;
+    
+}
+
+#TableOfContents > ul > li > ul > li:before {
+    content: '# '
+}
+
+#TableOfContents > ul > li:before  {
+    content: ''
+}
+
+#TableOfContents > ul > li  {
+    color: rgba(224, 158, 158, 0.63);
+    
+}
+
+#TableOfContents > ul > li > ul > li > ul > * {
+    color: initial;
+}
+
+#TableOfContents ul li {
+    font-size: 0.9rem
+}
+
+#TableOfContents ul li ul li , #TableOfContents ul li {
+    margin-right: 0px!important;
+}
+
+
+#TableOfContents ul li ul li ul li {
+    font-size: 0.6rem
+}
+
+#TableOfContents ul li ul{
+    display: block;
+}
+
+.content tr, .content th, .content td {
+    text-align: center;
+}
+
+.content h2 {
+    margin-left: 15px;
+}
+
+article.post .content a {
+    color: red;
+}
+
+table, th, td {
+    border: 1px solid grey;
+}
+
+div#nav a.active, #header #nav ul a:hover {
+    background-image: linear-gradient(transparent, transparent 5px, #cc2a41 5px, #cc2a41) !important;
+    background-position: bottom !important;
+    background-size: 100% 6px !important;
+    background-repeat: repeat-x !important;
+}
+
+#footer-post #nav-footer ul li{
+    width: 50%
+}
+
+.post-list .post-item .meta {
+    display: inline-block;
+}
+
+code[data-lang] {
+    text-align: left;
+}

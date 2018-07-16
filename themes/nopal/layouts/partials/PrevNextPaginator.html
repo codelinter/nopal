@@ -1,0 +1,13 @@
+
+{{ .scratch.Set "totalpages" (.pgntr.TotalPages | int )}}
+{{ if gt (.scratch.Get "totalpages") 1 }}
+<div class="pagination">
+        {{ if  .pgntr.HasPrev }}
+        <a href="{{.pgntr.Prev.URL}}"><i class="fas fa-angle-left"></i></a>
+        {{end}}
+        <span class="page-number">Page {{.pgntr.PageNumber}} of {{.pgntr.TotalPages}}</span>
+     {{ if .pgntr.HasNext }}
+     <a href="{{.pgntr.Next.URL}}"><i class="fas fa-angle-right"></i></a>        
+     {{end}}  
+</div>
+{{end}}

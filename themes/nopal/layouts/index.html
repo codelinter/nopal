@@ -1,0 +1,18 @@
+{{ define "content" }}
+<div class="content index my4">
+{{ partial "menu.html" .}}
+<section id="writing">
+        <span class="h1">Recent Posts</span>
+        <ul class="post-list">
+        {{ range first 5 (where $.Site.RegularPages "Type" "post") }}
+            <li class="post-item">
+          <div class="meta">
+            {{ partial "timeUTC.html" (dict "date" .Date)}}
+          </div>
+              <span><a class="" href="{{.URL}}"> {{ .Title}} </a> </span>
+            </li>
+            {{end}}
+        </ul>
+      </section>
+</div>
+{{ end }}

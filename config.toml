@@ -1,0 +1,56 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Nopal Site Title"
+theme = "nopal"
+paginate = 8
+PaginatePath = "p"
+enableGitInfo = true
+
+## gohugo.io/content-management/urls/
+## Targetting content/post/*.md
+# [permalinks]
+  # post = "/:year/:month/:title/"
+
+[taxonomies]
+  tag = "tags"
+  
+disableKinds = ["taxonmy", "categories"]
+
+[params]
+  description = "Some Nopal description goes here"
+  author = "mintyowl"
+  nosharing = ["facebook"]
+  themestyle = "classic"
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
+  page = [ "HTML", "JSON" ]
+  section = [ "HTML", "JSON" ]
+  taxonomy = [ "HTML", "JSON" ]
+  taxonomyTerm = [ "HTML", "JSON" ]
+  
+
+[menu]
+    [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    url = "/"
+    weight = -2
+
+    [[menu.main]]
+    identifier = "Posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 1
+
+    [[menu.main]]
+    identifier = "About"
+    name = "About"
+    url = "/about"
+    weight = 1
+
+    [[menu.main]]
+    identifier = "Tags"
+    name = "Surf via tags"
+    url = "/tags"
+    weight = 1

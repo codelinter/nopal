@@ -1,0 +1,34 @@
+{{ define "content" }}
+        <div class="content index my4">
+{{ partial "menu.html" .}}
+{{.Content}}
+<section id="writing">        
+    <ul class="post-list"> 
+ <section class="boxes">
+    {{ range $.Data.Terms.ByCount }}
+    {{ $len := .Pages | len }}
+     <div id="{{ .Name | urlize }}-list" class="archive box" data-tag="{{ .Name | lower }}">
+            <h4 class="archive-title">
+              <a class="link-unstyled" href="{{ .Name | urlize }}">
+                {{ .Name }} ({{$len}})
+              </a>
+            </h4>
+         <ul class="archive-posts">
+        {{ range (first 5 .Pages.ByDate.Reverse) }}
+                <li class="archive-post">
+                  <a class="archive-post-title" href="{{ .Permalink }}">
+                    {{ .Title }}
+                  </a>
+                  </li>
+        {{ end }}
+        {{ if ge $len 5}}
+       <a href="{{.Name | urlize}}" style="color: blue;"> more </a></a>
+        {{end}}
+         </ul>
+    </div>
+   {{ end }}
+ </section>
+</ul>
+</section>
+</div>
+{{end}}

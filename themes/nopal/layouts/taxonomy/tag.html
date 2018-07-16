@@ -1,0 +1,21 @@
+{{- define "content" -}}
+<div class="content index my4">
+        {{- partial "menu.html" . -}}  
+      <section id="writing">        
+      <ul class="post-list"> 
+           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+           {{- range $paginator.Pages -}}
+                <li class="post-item">    
+                <div class="meta">
+                         {{- partial "timeUTC.html" (dict "date" .Date) -}}
+                </div>    
+                <span>
+                        <a class="" href="{{.URL | relURL}}">{{.Title  }}</a>
+                </span>
+                </li>
+           {{ end }}
+     </ul>
+     {{- partial "PrevNextPaginator.html" (dict "pgntr" $paginator "scratch" $.Scratch) -}}
+    </section>
+</div>
+{{end}}

@@ -1,0 +1,31 @@
+<div class="content index my4">
+{{ partial "menu.html" .}}
+{{.Content}}
+<section id="writing">  
+        <ul class="post-list">  
+               {{ $regularPages := (where $.Site.RegularPages "Type" (.Params.target)) }}
+               {{  $paginator := .Paginate $regularPages }} 
+              
+                {{ range ($paginator.Pages.ByDate.Reverse) }}
+                {{ $date := dateFormat "2006" .Date }}
+                {{ $cP :=  $paginator.URL}} 
+                {{ if or ( ne $date ($.Scratch.Get "date2")) (ne $cP ($.Scratch.Get "currentPage")) }}
+                    {{ $.Scratch.Set "date2" $date }}
+                    {{ ($.Scratch.Set "currentPage" $cP) }}
+                    <h2>{{  $date }}</h2> 
+                {{ end }}
+                
+                <li class="post-item">        
+                    <div class="meta">
+                        {{ partial "timeUTC.html" (dict "date" .Date)}}
+                    </div>
+                    <span>
+                            <a class="" href="{{.URL | relURL}}">{{.Title  }}</a>
+                    </span>
+                </li>
+                {{ end }}
+        </ul>
+{{ partial "PrevNextPaginator.html" (dict "pgntr" $paginator "scratch" $.Scratch) }}
+
+</section>
+</div>

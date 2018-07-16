@@ -1,0 +1,62 @@
+<div id="header-post">
+        <a id="menu-icon" href=""><i class="fas fa-bars fa-lg"></i></a>
+        <a id="menu-icon-tablet" href=""><i class="fas fa-bars fa-lg"></i></a>
+        <a id="top-icon-tablet" href="" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>    
+        <span id="menu">
+            <span id="nav">                    
+                            <ul>                         
+                                    {{ partial "menuLinks.html" .}}
+                            </ul>
+            </span>
+            <br>
+            <span id="actions">
+                <ul>
+                    {{ partial "navigator.html" . }}
+                  <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+                  <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+                </ul>
+               {{ with .PrevInSection}} <span id="i-prev" class="info" style="display:none;">{{ .Title }} (older)</span> {{end}}
+               {{ with .NextInSection}} <span id="i-next" class="info" style="display:none;">{{ .Title }} (newer)</span> {{end}}
+                <span id="i-top" class="info" style="display:none;">Back to top</span>
+                <span id="i-share" class="info" style="display:none;">Share post</span>
+            </span>
+            <br>
+          <div id="share" style="display: none">
+            <ul>                
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "facebook")) | len) 0  }}                
+            <li><a class="icon" href={{ printf "http://www.facebook.com/sharer.php?u=%s" .Permalink  }}><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "twitter")) | len) 0  }}
+            <li><a class="icon" href={{ printf "https://twitter.com/share?url=%s&text=%s" .Permalink .Title }}><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "linkedin")) | len) 0  }}
+            <li><a class="icon" href={{ printf "http://www.linkedin.com/shareArticle?url=%s&title=%s" .Permalink .Title }}><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "pinterest")) | len) 0  }}
+            <li><a class="icon" href={{ printf "https://pinterest.com/pin/create/bookmarklet/?url=%s&description=%s" .Permalink .Title }}><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "email")) | len) 0  }}
+            <li><a class="icon" href={{ printf "mailto:?subject=%s&body=New article at: %s" .Permalink .Title }}><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "getpocket")) | len) 0  }}
+            <li><a class="icon" href={{ printf "https://getpocket.com/save?url=%s&title=%s" .Permalink .Title }}><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "reddit")) | len) 0  }}
+            <li><a class="icon" href={{ printf "http://reddit.com/submit?url=%s&title=%s" .Permalink .Title }}><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "stumbleupon")) | len) 0  }}
+            <li><a class="icon" href={{ printf "http://www.stumbleupon.com/submit?url=%s&title=%s" .Permalink .Title }}><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "digg")) | len) 0  }}
+            <li><a class="icon" href={{ printf "http://digg.com/submit?url=%s&title=%s" .Permalink .Title }}><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+            {{end}}
+            {{  if eq ((intersect $.Site.Params.nosharing (slice "tumblr")) | len) 0  }}
+            <li><a class="icon" href={{ printf "http://www.tumblr.com/share/link?url=%s&name=%s&description=" .Permalink .Title }}><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+            {{end}}
+            </ul>          
+          </div>
+          <div id="toc">
+                  {{.TableOfContents}}            
+          </div>
+        </span>
+    </div>

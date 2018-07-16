@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang={{ .Site.LanguageCode }}>
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+ 
+<!-- open graph data -->
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:url" content="{{ .URL | absURL }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">   
+          
+<link rel="shortcut icon" href="/images/favicon.png">
+
+    <!-- title -->
+<title>{{ .Site.Title }}:
+        {{ partial "title" . }}
+    
+</title>
+    <!-- styles -->
+{{ $themeStyle := $.Site.Params.themestyle }}
+{{ with $themeStyle }}
+   <link rel="stylesheet" href="/css/{{printf "%s" $themeStyle}}.css">
+{{else}}
+   <link rel="stylesheet" href="/css/classic.css">
+{{end}}
+    
+    <link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+{{ range $.Site.Params.morecss}} 
+    <link rel="stylesheet" href="{{.}}">
+{{end}}
+</head>
+<body class="max-width mx-auto px3">

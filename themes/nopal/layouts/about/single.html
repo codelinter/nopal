@@ -1,0 +1,10 @@
+{{ define "content" }}
+<div class="content index my4">
+{{ partial "menu.html" .}}
+    <article class="post"> 
+        <div class="content">
+    {{.Content}}
+        </div>
+    </article>
+</div>
+{{ end }}
