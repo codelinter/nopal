@@ -1,5 +1,6 @@
 body {
     overflow-y: scroll;
+    font-size: 18px;
 }
 
 
@@ -91,11 +92,31 @@ table, th, td {
     border: 1px solid grey;
 }
 
+#header #nav{
+    font-size: 1.2rem;
+}
+
+#header h1, #header .h1{
+    font-size: 1.8rem;
+}
+
+.pagination .page-number{
+    font-size: 1rem;
+}
+
+.content h4, .content h5, .content h6 {
+    font-size: 1.2rem;
+}
+
 div#nav a.active, #header #nav ul a:hover {
     background-image: linear-gradient(transparent, transparent 5px, #cc2a41 5px, #cc2a41) !important;
     background-position: bottom !important;
     background-size: 100% 6px !important;
     background-repeat: repeat-x !important;
+}
+
+#footer{
+    font-size:18px;
 }
 
 #footer-post #nav-footer ul li{
@@ -104,6 +125,7 @@ div#nav a.active, #header #nav ul a:hover {
 
 .post-list .post-item .meta {
     display: inline-block;
+    font-size:18px;
 }
 
 code[data-lang] {
